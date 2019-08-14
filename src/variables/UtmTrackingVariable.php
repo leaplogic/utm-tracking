@@ -11,6 +11,8 @@
 namespace leaplogic\utmtracking\variables;
 
 use leaplogic\utmtracking\UtmTracking;
+use leaplogic\utmtracking\enums\UtmTracking_Cookies;
+use leaplogic\utmtracking\enums\UtmTracking_Params;
 
 use Craft;
 
