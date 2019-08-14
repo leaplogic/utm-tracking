@@ -10,7 +10,8 @@
 
 namespace leaplogic\utmtracking\services;
 
-use leaplogic\utmtracking\enums;
+use leaplogic\utmtracking\enums\UtmTracking_Cookies;
+use leaplogic\utmtracking\enums\UtmTracking_Params;
 
 use Craft;
 use craft\base\Component;
@@ -58,7 +59,7 @@ class UtmTracking extends Component
 
     private function saveReferrer()
     {
-        $referrer = Craft::$app->getRequest()->getUrlReferrer();
+        $referrer = Craft::$app->getRequest()->getReferrer();
 
         if ($referrer) {
             $this->setSessionCookie(UtmTracking_Cookies::REFERRER, $referrer);
