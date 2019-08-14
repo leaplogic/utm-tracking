@@ -1,0 +1,44 @@
+{
+    "name": "leaplogic/utm-tracking",
+    "description": "Easy UTM & Referrer tracking",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "utm tracking"
+    ],
+    "support": {
+        "docs": "https://github.com/leaplogic/utm-tracking/blob/master/README.md",
+        "issues": "https://github.com/leaplogic/utm-tracking/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leap Logic LLC",
+            "homepage": "https://leaplogic.net"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+		"delight-im/cookie": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+          "leaplogic\\utmtracking\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "UTM Tracking",
+        "handle": "utm-tracking",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/leaplogic/utm-tracking/master/CHANGELOG.md",
+        "components": {
+            "utmTracking": "leaplogic\\utmtracking\\services\\UtmTracking"
+        },
+        "class": "leaplogic\\utmtracking\\UtmTracking"
+    }
+}
