@@ -28,7 +28,7 @@ To install the plugin, follow these instructions.
 ```TWIG
 {% do craft.utmTracking.sniff() %}
 <script>
-    window.referrer = "{{ craft.utmTracking.getReferrer()|e('js') }}" || "{{ craft.app.request.getUrlReferrer() }}";
+    window.referrer = "{{ craft.utmTracking.getReferrer()|e('js') }}" || "{{ craft.app.request.referrer }}";
     window.source = "{{ craft.utmTracking.getSource()|e('js') }}";
     window.medium = "{{ craft.utmTracking.getMedium()|e('js') }}";
 </script>
