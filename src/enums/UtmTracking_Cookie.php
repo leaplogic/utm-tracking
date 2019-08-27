@@ -2,7 +2,7 @@
 namespace leaplogic\utmtracking\enums;
 
 
-abstract class UtmTracking_Cookies extends BaseEnum
+abstract class UtmTracking_Cookies
 {
     // Constants
     // =========================================================================
